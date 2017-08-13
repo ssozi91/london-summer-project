@@ -1,5 +1,4 @@
 # Personal Website
-
 * A personal website that will be built within the 3 week gap.
 * There will be multiple sections and a backend.
 * They will be making calls to the Github API as well as to their own backend.
