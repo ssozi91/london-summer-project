@@ -19,6 +19,8 @@
   "homepage": "https://github.com/ssozi91/london-summer-project#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-markdown": "^1.2.0"
   }
 }
