@@ -1,26 +1,24 @@
 {
   "name": "london-summer-project",
   "version": "1.0.0",
-  "description": "personal-website",
+  "description": "summer-project",
   "main": "server.js",
   "scripts": {
-    "test": "profile",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ssozi91/london-summer-project.git"
   },
-  "keywords": [
-    "summerpro1"
-  ],
-  "author": "raymond",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ssozi91/london-summer-project/issues"
   },
   "homepage": "https://github.com/ssozi91/london-summer-project#readme",
   "dependencies": {
+    "express": "^4.15.4",
     "express-handlebars": "^3.0.0"
   }
 }
