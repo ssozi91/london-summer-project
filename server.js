@@ -1,11 +1,15 @@
 var express = require('express');
 var exphbs  = require('express-handlebars');
+var getMyWork = require('./myWork.js')
 
 var app = express();
 app.use(express.static('public'))
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+app.get('/my-work', function (req, res) {
+     res.render('my-work',getMyWork());
+    });
 app.get('/', function (req, res) {
      res.render('profile');
     });
