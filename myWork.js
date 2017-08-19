@@ -1,9 +1,22 @@
 var GitHubApi = require("github");
-var getMyWork=function(){
-return {"lastUpdated":"2 hours ago",
-    "repoList":[{"name":"repo1"},{"name":"repo2"},{"name":"repo3"}]
 
+var github = new GitHubApi();
+var allRepos;
+github.authenticate({
+    type: "basic",
+    username: process.env.GITHUB_USERNAME,
+    password: process.env.GITHUB_PASSWORD
+});
+github.repos.getAll({})
+.then(saveRepoList) //=> saveRepoList({...someData...})
+
+
+var saveRepoList = function(data) {
+    allRepos = data
 }
+
+var getMyWork=function(){
+    return allRepos;
 }
 
 module.exports = getMyWork;

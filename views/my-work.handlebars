@@ -1,10 +1,11 @@
 <div>
    <ul>
-    {{#each repoList}}
-    <li>{{this.name}}</li>
+    {{#each data}}
+    <li>
+        <a href={{{html_url}}} target="_blank">
+        {{{name}}}
+        </a>
+    </li>
     {{/each}}    
     </ul>
-    <p>
-    Last updated: {{{lastUpdated}}}
-    </p>
 </div>
