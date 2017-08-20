@@ -8,8 +8,7 @@ github.authenticate({
     password: process.env.GITHUB_PASSWORD
 });
 github.repos.getAll({})
-.then(saveRepoList) //=> saveRepoList({...someData...})
-
+.then(data => {allRepos=data})
 
 var saveRepoList = function(data) {
     allRepos = data

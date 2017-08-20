@@ -48,7 +48,7 @@
   .sidenav a {font-size: 18px;}
 }
 img{
-    width: 30%;
+    width: 28%;
     float: right;
     margin: 0 0 10px 10px;
     }
@@ -79,7 +79,7 @@ img{
     left: 0em;
 }
 .profile-wrap{
-    background-image: url("image/web.png");
+   background-image: url("image/web.png");
    padding: 35px;
    display: inlineblock;
 }
